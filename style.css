@@ -4,6 +4,11 @@
     background-color: rgb(220, 59, 93)
 }
 
+.main {
+    background-color: rgb(220, 59, 93);
+    display: grid;
+}
+
 
 #titulo {
     padding: 0;
@@ -18,14 +23,35 @@
     color: white;
 }
 
+.horarios {
+    margin: 5% auto 5%;
+    text-align: center;
+}
+
+.borderless {
+    border: rgb(220, 59, 93);   
+}
+
 
 /* Celular */
 @media only screen and (max-width: 500px) {
     #titulo {
-        font-size: x-large;
+        display: none;
     }
     nav > div {
         padding: 1%;
+    }
+
+    .idx::after {
+        content: ' * Mind & Body *';
+    }
+
+    .claxes::after {
+        content: ' * Clases';
+    }
+
+    .imxs::after {
+        content: ' * Imágenes';
     }
 
     .banners {
@@ -69,6 +95,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .horarios {
+        font-size: x-small;
+    }
+
 }
 
 /* Tablet */
@@ -124,4 +155,8 @@
         margin-right: auto;
     }
     
+    .horarios {
+        font-size: larger;
+        width: 75%;
+    }
 }

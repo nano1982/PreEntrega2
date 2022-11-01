@@ -1,16 +1,74 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: rgb(220, 59, 93)
 }
 
-nav {
-    margin: 1%
+
+#titulo {
+    padding: 0;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    background-color: rgb(220, 59, 93);
+    font-family: Verdana
 }
+
+.titulo-navbar {
+    color: white;
+}
+
 
 /* Celular */
 @media only screen and (max-width: 500px) {
+    #titulo {
+        font-size: x-large;
+    }
+    nav > div {
+        padding: 1%;
+    }
+
+    .banners {
+        display: flex;
+        flex-direction: row;
 
 
+    }
+    .banners img {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #texto {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color:white
+    }
+    
+    #texto p {
+        color:white;
+        font-size: 15px;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: large;
+        color: white
+    }
+    
+    footer iframe {
+        width: 75%;
+        height: 300px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Tablet */
@@ -23,5 +81,47 @@ nav {
     .navbar-list {
         margin-right: 2px;
         margin-left: auto;
+        color: white
     }
+    .banners {
+        width: 80%;
+        margin: 2% 10% 2% 10%;
+        text-align: center;
+    }
+    
+    .banners img {
+        width: 20%;
+        margin: 3px
+    }
+
+    #texto {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        color:white
+    }
+    
+    #texto p {
+        color:white;
+        font-size: 20px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: x-large;
+        color: white
+    }
+    
+    footer iframe {
+        width: 50%;
+        height: 300px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }

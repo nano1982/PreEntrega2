@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 1%
+}
+
+/* Celular */
+@media only screen and (max-width: 500px) {
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 501px) and (max-width: 980px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 981px){
+    .navbar-list {
+        margin-right: 2px;
+        margin-left: auto;
+    }
+}
